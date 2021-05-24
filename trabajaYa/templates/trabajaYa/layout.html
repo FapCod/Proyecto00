@@ -11,14 +11,17 @@
     <link type="text/css" rel="stylesheet" href=" {% static 'css/login.css' %} ">
     <!-- css propio -->
     <link type="text/css" rel="stylesheet" href=" {% static 'css/layout.css' %} ">
+    <link type="text/css" rel="stylesheet" href=" {% static 'css/home.css' %} ">
     <title>TrabajaYa!</title>
   </head>
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-success sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand link-light" href="#">TrabajaYa!</a>
+        <a class="navbar-brand link-light" href="#">
+        <img src="{% static 'images/LOGOFAPCOD.png' %}" height="90">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,15 +32,15 @@
             </li>
 
 
-            <li class="nav-item">
+            <li class="nav-item text-end">
               <a class="nav-link link-light  " aria-current="page" href="#">Sobre Nosotros</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item text-end">
               <a class="nav-link link-light" href="{% url 'ingresar' %}">Ingresar</a>
             </li>
             
-            <li class="nav-item">
+            <li class="nav-item text-end">
               <a class="nav-link link-light " href="{% url 'crearUsuario' %}">Registrarse</a>
             </li>
 
@@ -52,7 +55,30 @@
 
  	  {% endblock %}
 
+    <!-- footer -->
+        <div id="footer" class="p-5">
+          <div class="container w-50 pt-5">
+            <div class="row row-cols-md-2 justify-content-md-center">
+              <div class="col text-center">
+                <a href="#">
+                  <button class="btn btn-lg rounded-pill btn-warning w-100  p-3 shadow-sm font-weight-bold">Customer Support</button>
+                </a>
+              </div>
+            </div>
+            <div class="row justify-content-md-center py-5">
+              <div class="col text-center font-weight-light">
+                <p>For Nintendo 3DS systems, use Parental Controls to restrict 3D mode for children 6 and under.</p>
+                <p>Internet access required for online features. For more info, go to support.nintendo.com.</p>
+                <p>Games and amiibo accessories sold separately. Figures shown not actual size. Compatibility and functionality of amiibo may vary per game. Visit amiibo.com for specific details on how each amiibo works.</p>
+                <p>© 2021 - 2030 TrabajaYa. Nintendo properties are trademarks of Nintendo.</p>
+              </div>
+              
+            </div>
+            <div class="row"></div>
+          </div>
+        </div>
     
+    <!-- end footer -->
 
    
     <script src='{% static "js/login.js" %}' ></script>
