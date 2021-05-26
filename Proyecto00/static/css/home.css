@@ -1,5 +1,5 @@
 #ribbon{
-	background-color: #198754;
+	background-color: black;
 	/*background-image: repeating-linear-gradient(45deg,transparent,transparent 25px, rgba(131,21,21,0.5) 25px, rgba(131,21,21,0.5) 40px);*/
 }
 
@@ -20,7 +20,7 @@
 	position: relative;
 	margin-top: -20px;
 	z-index: 10;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+	box-shadow: 0 0 10px rgba(255,255,255,1)
 }
 
 #birthday img{
@@ -33,12 +33,13 @@
 }
 
 #separator-ribbon{
+	/*background:  black;*/
 	width: 100%;
 	overflow: hidden;
 	position: relative;
 	z-index: 2;
-
 }
+
 
 #separator-ribbon .content{
 	width: 150%;
@@ -46,6 +47,7 @@
 	margin-left: -25%;
 	border-bottom-left-radius: 50%;
 	border-bottom-right-radius: 50%;
+	background-color: black;
 }
 .card-border{
     border: solid 10px white;
@@ -59,7 +61,8 @@
 
 #games{
     background: rgb(255,255,255);
-    background: url(../images/1.jpg),  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(99,196,255,1) 57%);
+    
+    /*background: url(../images/1.jpg),  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(99,196,255,1) 57%);*/
     background-repeat: repeat-x;
     background-size: 75%;
     margin-top: -20px;
@@ -72,7 +75,8 @@
     z-index: 2;
 }
 #separator-amiibos .content{
-    background: url(../images/bg-03.png);
+    
+    /*background: url(../images/bg-03.png);*/
     width: 110%;
     height: 100px;
     margin-left: -5%;
@@ -80,7 +84,8 @@
     border-top-right-radius: 50%;
 }
 #amiibos{
-    background: url(../images/bg-01.png),url(../images/bg-03.png);
+	background: white;
+    /*background: url(../images/4.jpg),url(../images/4.jpg);*/
     background-repeat: no-repeat, repeat;
     background-position: bottom center, center center;
     background-size: 100%, auto;
@@ -104,17 +109,25 @@
 }
 
 #separator-amiibos-footer{
-    height: 20vw;
+    height: 1vw;
 }
 
-#play{   
-    background: url(../images/bg-04.png);
+#play{
+	background: white;   
+    /*background: url(../images/bg-04.png);*/
     background-color: rgb(255, 255, 219);
     background-size: 40px 40px;
 }
+.card1{
+	background-color: #0d6efd;
+}
+.card1:hover{
+	 transform: scale(1.05);
+	 background: #023d94 ;
+	 
 
-#footer{
-    background: url(../images/bg-04.png);
-    background-color: rgb(224, 144, 24);
-    background-size: 50px 50px;
+}
+
+.colornegro{
+	background: black;
 }

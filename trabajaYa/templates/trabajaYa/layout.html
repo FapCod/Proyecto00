@@ -12,15 +12,17 @@
     <!-- css propio -->
     <link type="text/css" rel="stylesheet" href=" {% static 'css/layout.css' %} ">
     <link type="text/css" rel="stylesheet" href=" {% static 'css/home.css' %} ">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>TrabajaYa!</title>
   </head>
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top  ">
       <div class="container-fluid">
         <a class="navbar-brand link-light" href="#">
-        <img src="{% static 'images/LOGOFAPCOD.png' %}" height="90">
+        <img src="{% static 'images/LOGOFAPCOD.png' %}" height="90" >
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -56,27 +58,56 @@
  	  {% endblock %}
 
     <!-- footer -->
-        <div id="footer" class="p-5">
-          <div class="container w-50 pt-5">
-            <div class="row row-cols-md-2 justify-content-md-center">
-              <div class="col text-center">
-                <a href="#">
-                  <button class="btn btn-lg rounded-pill btn-warning w-100  p-3 shadow-sm font-weight-bold">Customer Support</button>
-                </a>
-              </div>
-            </div>
-            <div class="row justify-content-md-center py-5">
-              <div class="col text-center font-weight-light">
-                <p>For Nintendo 3DS systems, use Parental Controls to restrict 3D mode for children 6 and under.</p>
-                <p>Internet access required for online features. For more info, go to support.nintendo.com.</p>
-                <p>Games and amiibo accessories sold separately. Figures shown not actual size. Compatibility and functionality of amiibo may vary per game. Visit amiibo.com for specific details on how each amiibo works.</p>
-                <p>© 2021 - 2030 TrabajaYa. Nintendo properties are trademarks of Nintendo.</p>
-              </div>
+       <footer class="bg-dark text-light py-4">
+          
+          <div class="container">
+            <nav class="row">
+
+              <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+                <img src="{% static 'images/LOGOFAPCOD.png' %}" alt="" height="50" class="img-logo mr-2"> TrabajaYa!
+              </a>
+              <!-- menu -->
+              <ul class="col-3 list-unstyled">
+                <li class="font-weight-bold text-uppercase">Temas</li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                
+              </ul>
+              <!-- menu dos -->
+              <ul class="col-3 list-unstyled">
+                <li class="font-weight-bold text-uppercase">Redes</li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                <li><a href="" class="text-reset">Link1</a></li>
+                
+              </ul>
+              <!-- redes -->
+              <ul class="col-3 list-unstyled">
+                <li class="font-weight-bold text-uppercase">Redes sociales</li>
+                <li class="d-flex justify-content-between">
+                  <a href="" class="text-reset"><i class="fab fa-facebook-f"></i></a>
+                   <a href="" class="text-reset"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="text-reset"><i class="fab fa-facebook-f"></i></a>
+                     <a href="" class="text-reset"><i class="fab fa-facebook-f"></i></a>
+                 
+
+                </li>
+                
+              </ul>
               
-            </div>
-            <div class="row"></div>
+            </nav>
+
           </div>
-        </div>
+
+
+       </footer>
     
     <!-- end footer -->
 
